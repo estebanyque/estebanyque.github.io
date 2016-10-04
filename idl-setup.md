@@ -1,3 +1,6 @@
+---
+title: Setting up IDL and adding Libraries
+---
 # Setting up IDL and adding libraries
 
 The next information has been tested under OS X 10.11.6 using BASH and IDL 84 provided under the ESO repositories.
