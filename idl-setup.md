@@ -26,11 +26,13 @@ echo "source /Applications/exelis/idl84/bin/idl_setup.bash" >> ~/.profile
 To add libraries to IDL like [Astronomy's user library](http://idlastro.gsfc.nasa.gov/) and [Coyote](http://www.idlcoyote.com/) the next steps are required:
 
  * Create a folder (to organize your library) like:
+
 ```
 mkdir ~/idl/
 ```
 
  * Download and uzip the libraries
+
 ```
 wget http://www.idlcoyote.com/programs/zip_files/coyoteprograms.zip
 cd ~/idl/
@@ -38,6 +40,7 @@ unzip ../Downloads/coyoteprograms.zip
 ```
 
  * Export the libraries
+
 ```
 echo "export IDL_PATH=+~/idl:$IDL_PATH" >> ~/.profile
 ```
@@ -56,39 +59,59 @@ The example above will include two folders _`/path/to/another/library`_ and _`/a
 Adding libraries in the workbench is done easily with the next steps:
 
  1. Open the preferences dialog click on `IDL->Preferences` as display in the next image
+
 ![Preferences](images/idl_preferences.png)
+
  2. Choose expand `IDL` and choose `Paths`
+
 ![IDL PATH](images/add_path.png)
+
  3. Click `Insert` button and choose the folder with the libraries. It is possible to add diferent locations. Remember to click in the `Apply` and `OK` buttons.
+
 ![PATH MODIFIED](images/added_paths.png)
 
 ## Checking the paths added to IDL
+
 If *IDL* is running in a Terminal of from a GUI, it is possible to verify which _PATH_ are visible, with a simple command:
+
 ```
 !PATH
 ```
+
 Notice the diference of folders from the Terminal and the GUI:
+
 * Terminal output
+
 ![Terminal Output](images/terminal_path.png)
+
 * GUI output (user's library has been highlighted)
+
 ![GUI Output](images/gui_path.png)
 
 ## Another quick test
+
 Checking [this](http://www.idlcoyote.com/code_tips/installcoyote.php), and using the GUI, I run the next step.
+
 * `print, File_Which('cgaxis')` 
+
 ![Path Test](images/path_test.png)
 
 It seems that the libraries are visible and working.
 
 But, from the terminal it is necessary to add all the libraries already loaded in the GUI, because, as you will see in the next screenshot, the same command will failed:
+
 ![This test contain an error an a solution](images/path_test_terminal.png).
 
 The first time running `print, File_Which('cgaxis')`, we got a message *Variable is undefined: FILE_WHICH.*, to avoid that problem, the command `export IDL_PATH=+/Applications/exelis/idl84:$IDL_PATH` were added and running `IDL` again, was possible to fix this problem.
 
 ## External Links
+
 This document has been prepared reading:
+
 [Coyote](http://www.idlcoyote.com/)
+
 [Coyote IDL Library Installation](http://www.idlcoyote.com/code_tips/installcoyote.php)
+
 [Managing IDL Paths](http://www.harrisgeospatial.com/docs/Managing_IDL_Paths.html)
 
 And the source of the document is in Markdown edited with [Haroopad](http://pad.haroopress.com/).
