@@ -58,16 +58,11 @@ The example above will include two folders _`/path/to/another/library`_ and _`/a
 ## Adding libraries to Workbench
 Adding libraries in the workbench is done easily with the next steps:
 
- 1. Open the preferences dialog click on `IDL->Preferences` as display in the next image
-
+ 1. Open the preferences dialog click on `IDL->Preferences` as display in the next image  
 ![Preferences](images/idl_preferences.png)
-
- 2. Choose expand `IDL` and choose `Paths`
-
+ 2. Choose expand `IDL` and choose `Paths`  
 ![IDL PATH](images/add_path.png)
-
- 3. Click `Insert` button and choose the folder with the libraries. It is possible to add diferent locations. Remember to click in the `Apply` and `OK` buttons.
-
+ 3. Click `Insert` button and choose the folder with the libraries. It is possible to add diferent locations. Remember to click in the `Apply` and `OK` buttons.  
 ![PATH MODIFIED](images/added_paths.png)
 
 ## Checking the paths added to IDL
@@ -80,20 +75,16 @@ If *IDL* is running in a Terminal of from a GUI, it is possible to verify which 
 
 Notice the diference of folders from the Terminal and the GUI:
 
-* Terminal output
-
+* Terminal output  
 ![Terminal Output](images/terminal_path.png)
-
-* GUI output (user's library has been highlighted)
-
+* GUI output (user's library has been highlighted)  
 ![GUI Output](images/gui_path.png)
 
 ## Another quick test
 
 Checking [this](http://www.idlcoyote.com/code_tips/installcoyote.php), and using the GUI, I run the next step.
 
-* `print, File_Which('cgaxis')` 
-
+* `print, File_Which('cgaxis')`  
 ![Path Test](images/path_test.png)
 
 It seems that the libraries are visible and working.
@@ -106,12 +97,9 @@ The first time running `print, File_Which('cgaxis')`, we got a message *Variable
 
 ## External Links
 
-This document has been prepared reading:
-
-[Coyote](http://www.idlcoyote.com/)
-
-[Coyote IDL Library Installation](http://www.idlcoyote.com/code_tips/installcoyote.php)
-
+This document has been prepared reading:  
+[Coyote](http://www.idlcoyote.com/)  
+[Coyote IDL Library Installation](http://www.idlcoyote.com/code_tips/installcoyote.php)  
 [Managing IDL Paths](http://www.harrisgeospatial.com/docs/Managing_IDL_Paths.html)
 
 And the source of the document is in Markdown edited with [Haroopad](http://pad.haroopress.com/).
